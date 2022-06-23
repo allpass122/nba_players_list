@@ -1,16 +1,9 @@
 const mysql = require("mysql");
 const data = require("./players.json");
 const mysqldump = require("mysqldump");
-
-console.log(typeof data);
-console.log(data.length);
-
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "mysqlpwd",
-  database: "nba",
-});
+const config = require("./mysqlLoginConfig");
+// console.log(config);
+const connection = mysql.createConnection(config);
 
 connection.connect();
 

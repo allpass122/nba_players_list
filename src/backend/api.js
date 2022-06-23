@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
+const config = require("./mysqlLoginConfig");
 
 const app = express();
 
@@ -17,12 +18,7 @@ app.listen(port, () => {
   console.log(`Server is up on port ${port}.`);
 });
 
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "mysqlpwd",
-  database: "nba",
-});
+const connection = mysql.createConnection(config);
 
 connection.connect();
 
