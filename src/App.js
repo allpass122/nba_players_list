@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Template from "./template";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import DetailPage from "./detailPage";
 
 function App() {
+  // useEffect(() => {
+  //   Test();
+  // }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route exact path="/" element={<Template />} />
+          <Route exact path="/detail" element={<DetailPage />} />
+        </Routes>
+      </BrowserRouter>
+      {/* <Template /> */}
+    </>
   );
 }
 
