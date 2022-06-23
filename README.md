@@ -9,8 +9,11 @@
 
 ## 前置作業
 
-1. git clone 後在 `/` 以及 `/backend` ：`yarn add` 或 `npm install`，缺什麼套件裝什麼。
+1. git clone 後在 `/` 以及 `/src/backend` ：`yarn add` 或 `npm install`，缺什麼套件裝什麼。
 2. 要先在本地的 mysql 資料庫創一個 database 及 table: players。這邊沒有程式化程式內也沒有用 variable 表示 config。
+   同時要改的地方還有 `importData.js` 中 `mysql.createConnection` 的參數 (line 8)。
+   同時要改的地方還有 `src/backend/api.js` 中 `mysql.createConnection` 的參數 (line 20)。
+
    附上我在 `MySQLWorkBench` 的程式碼。
 
 ```
