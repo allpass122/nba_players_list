@@ -2,10 +2,10 @@
 
 ## 技術
 
-> Front-end: `React`, `material-ui`(mui), `react-chartjs-2`, `axios`
-> Back-end: `NodeJs`, `express`
-> Database: `mysql`
-> Other tool: `postman`, `MySQLWorkBench`
+- Front-end: `React`, `material-ui`(mui), `react-chartjs-2`, `axios`
+- Back-end: `NodeJs`, `express`
+- Database: `mysql`
+- Other tool: `postman`, `MySQLWorkBench`
 
 ## 前置作業
 
