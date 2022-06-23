@@ -253,7 +253,6 @@ const App = () => {
                 variant="filled"
                 value={name}
                 onChange={handleTextChange(setName)}
-                autoComplete={false}
               />
             </Box>
 
